@@ -1,0 +1,45 @@
+.about-container{
+    height:700px;
+    background: #F4F0F6;
+}
+
+.profile-pic{
+    width: 313px;
+    height: 313px;
+    margin-left: 120px;
+}
+
+.col-img{
+    display: flex;
+    align-items: center;
+}
+
+.col-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.col-desc > div > p {
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 350px;
+
+}
+
+.about-me{
+
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+
+}

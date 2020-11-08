@@ -1,0 +1,57 @@
+import React from 'react';
+import './nav-bar.css';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {Nav, Navbar} from "react-bootstrap";
+
+
+
+class NavBar extends React.Component {
+
+    handleSetActive = to => {
+        console.log(to);
+    };
+    render() {
+
+        return (<Navbar  expand="lg">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="ml-4 mt-5">
+                    <Link
+                        activeClass="active"
+                        to="#home"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        className= "nav-link" href="#home"
+                    >Home</Link>
+
+                    <Link
+                        activeClass="active"
+                        to="#about"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        className= "nav-link" href="#about"
+                    >About</Link>
+
+                    <Link
+                        activeClass="active"
+                        to="#work"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        className= "nav-link" href="#work"
+                    >Work</Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>)
+
+
+
+    }
+};
+
+export default NavBar;
