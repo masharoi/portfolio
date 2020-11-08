@@ -1,5 +1,5 @@
 import React from 'react';
-import './nav-bar.css';
+import './nav-bar.scss';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import {Nav, Navbar} from "react-bootstrap";
 
@@ -12,13 +12,12 @@ class NavBar extends React.Component {
     };
     render() {
 
-        return (<Navbar  expand="lg">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+        return (
+            <Navbar  expand="lg">
                 <Nav className="ml-4 mt-5">
                     <Link
                         activeClass="active"
-                        to="#home"
+                        to="home"
                         spy={true}
                         smooth={true}
                         offset={50}
@@ -28,7 +27,7 @@ class NavBar extends React.Component {
 
                     <Link
                         activeClass="active"
-                        to="#about"
+                        to="about"
                         spy={true}
                         smooth={true}
                         offset={50}
@@ -38,14 +37,16 @@ class NavBar extends React.Component {
 
                     <Link
                         activeClass="active"
-                        to="#work"
+                        to="work"
                         spy={true}
                         smooth={true}
-                        offset={50}
+                        offset={5}
                         duration={500}
                         className= "nav-link" href="#work"
                     >Work</Link>
                 </Nav>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
             </Navbar.Collapse>
         </Navbar>)
 

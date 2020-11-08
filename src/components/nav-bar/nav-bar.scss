@@ -1,10 +1,9 @@
 
-.nav{
+.navbar-nav{
     margin-top: 55px;
-}
 
-.nav-link{
-   color: black!important;
+    .nav-link{
+    color: black!important;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -12,6 +11,9 @@
     letter-spacing: 0em;
     text-align: left;
     margin: 0 5px;
+    text-decoration: none;
+  }
 
 }
+
 

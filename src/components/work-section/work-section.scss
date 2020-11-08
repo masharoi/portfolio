@@ -1,9 +1,8 @@
 .work-container{
     margin-top: 250px;
     margin-bottom: 250px;
-}
 
-.work{
+   .work-title{
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -12,18 +11,23 @@
     text-align: left;
     margin-left:150px;
 
-}
+  }
 
-.work-list{
+  .work-list{
     padding-left: 150px;
+
+      a {
+          margin-right: 45px;
+          margin-top: 120px;
+
+      }
+
+      .work-img{
+          height: 100%;
+          width: 94%;
+      }
+  }
+
+
 }
 
-.work-list > a {
-    margin-right: 45px;
-    margin-top: 120px;
-
-}
-.work-img{
-    height: 100%;
-    width: 94%;
-}

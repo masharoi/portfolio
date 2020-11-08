@@ -4,12 +4,9 @@
     color:white;
     align-items: center;
     justify-content: center;
-
     margin-top:20px;
 
-}
-
-.footer-container > p{
+  p{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -17,11 +14,20 @@
     letter-spacing: 0em;
     text-align: left;
 
+  }
+
+
+  .footer-social-links{
+    color: white;
+
+    a {
+      color: white;
+    }
+
+  }
+
+
+
 }
 
- .social-links-footer{
-    color: white;
-}
- .social-links-footer > a {
-     color: white;
- }
+
