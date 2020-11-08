@@ -1,4 +1,9 @@
 
+body{
+    font-family: Josefin Sans, serif !important;
+
+
+}
 .container-main{
     padding: 0px 0;
 
@@ -7,6 +12,7 @@
     height: 900px;
     padding-left: 82px;
     background: url("assets/portfolio-img 1.png") no-repeat right;
+    background-size: 45% 100%;
 }
 
 .name{
