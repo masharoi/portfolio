@@ -14,7 +14,7 @@ function App() {
         <div className="intro" id="home">
          <NavBar />
 
-          <div className="intro-details ml-5">
+          <div className="intro-details ">
             <h1 className="details-name ">Hi, I'm Maria.</h1>
             <h2 className="details-profession ml-1">User interface designer</h2>
             <div className="d-flex mt-2 ml-2 details-social-links">

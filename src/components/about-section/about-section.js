@@ -1,6 +1,8 @@
 import React from 'react';
 import './about-section.scss'
 import profile_img from '../../assets/profile-pic 1.png'
+
+
 const AboutSection = () =>{
 
     return <div className="row about-container m-0" id="about">

@@ -14,7 +14,7 @@ class NavBar extends React.Component {
 
         return (
             <Navbar  expand="lg">
-                <Nav className="ml-4 mt-5">
+                <Nav className=" mt-5">
                     <Link
                         activeClass="active"
                         to="home"
@@ -40,7 +40,7 @@ class NavBar extends React.Component {
                         to="work"
                         spy={true}
                         smooth={true}
-                        offset={5}
+                        offset={0}
                         duration={500}
                         className= "nav-link" href="#work"
                     >Work</Link>
