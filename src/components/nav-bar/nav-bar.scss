@@ -1,26 +1,31 @@
-
-.navbar-nav{
-    margin-top: 55px;
-
-    .nav-link:nth-child(1){
-        margin-left: 136px;
-    }
-    .nav-link{
-    color: black!important;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin: 0 5px;
-    text-decoration: none;
-
-        &:hover{
-
-        }
-  }
-
+//
+.transparent {
+  background: transparent!important;
 }
-
-
+.light {
+  background: white!important;
+}
+.navbar-nav {
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  padding-left:131px;
+  //     .active {
+  //       color:red;
+  //     }
+  //     .nav-link{
+  //     color: black!important;
+  //     font-size: 20px;
+  //     font-style: normal;
+  //     font-weight: 400;
+  //     line-height: 24px;
+  //     letter-spacing: 0em;
+  //     text-align: left;
+  //     margin: 0 5px;
+  //     text-decoration: none;
+  //
+  //         &:hover{
+  //
+  //         }
+  //   }
+  //
+}

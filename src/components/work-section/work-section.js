@@ -1,25 +1,63 @@
-import React from 'react';
-import './work-section.scss';
-import img1 from '../../assets/sop-dribbble 1.png'
-import img2 from '../../assets/hmp2 1.png'
-import img3 from '../../assets/Screen Shot 2020-10-31 at 10.52 1.png'
-import img4 from '../../assets/Screen Shot 2020-10-31 at 7.29 1.png'
-import img5 from '../../assets/Screen Shot 2020-10-31 at 7.26 1.png'
+import React from "react";
+import "./work-section.scss";
+import sop from "../../assets/sop-dribbble.png";
+import hmp from "../../assets/hmp2.jpg";
+import suvorov from "../../assets/suvorov-cover.jpg";
+import melody from "../../assets/melody-cover.png";
+import contact from "../../assets/contact-cover.jpg";
 
-const works = [img1, img2, img3, img4, img5]
+const works = [
+  {
+    img: sop,
+    link: "https://www.behance.net/gallery/107745399/Second-Opinion-app",
+    name: "Second Opinion App"
+  },
+  {
+    img: hmp,
+    link: "https://www.behance.net/gallery/107747377/Home-monitoring-app",
+    name: "Home Monitoring App"
+  },
+  {
+    img: suvorov,
+    link: "https://www.behance.net/gallery/86535683/UI-Suvorov-Park-Website",
+    name: "Suvorov Park website"
+  },
+  {
+    img: melody,
+    link: "https://www.behance.net/gallery/83774703/Melody-Mobile-App",
+    name: "Melody App"
+  },
+  {
+    img: contact,
+    link: "https://www.behance.net/gallery/82318209/Contact-Mobile-App",
+    name: "Contact App"
+  }
+];
+
 const WorkSection = () => {
-
-    return( <div className="work-container" id="work">
-            <h1 className="work-title">Work</h1>
-           <div className="d-flex flex-wrap work-list">
-               {works.map(src=> {
-                   return <a href="#"><img src={src} className="work-img"/></a>
-               })}
-           </div>
-        </div>
-
-    )
-
-}
+  return (
+    <div className="work-container" id="work">
+      <h1 className="work-title">Projects</h1>
+      <div className="d-flex flex-wrap work-list">
+        {works.map(work => {
+          return (
+            <div className="img-container">
+              <img src={work.img} className="work-img" />
+              <a
+                target="_blank"
+                href={work.link}
+              >
+                <div className="details">
+                  <h3>{work.name}</h3>
+                  <p>UI/UX design</p>
+                </div>
+              </a>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 
 export default WorkSection;

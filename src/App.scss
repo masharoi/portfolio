@@ -1,44 +1,55 @@
-
-body{
-    font-family: Josefin Sans, serif !important;
-
-
+body {
+  font-family: Josefin Sans, serif !important;
 }
 .container-main {
-    padding: 0px 0;
+  padding: 0px 0;
 
+  .intro {
+    height: 100vh;
+    background: url("assets/New_Land.jpg") no-repeat right;
+    background-size: 100vh auto;
+    margin-top: -56px;
+  }
 
-    .intro {
-        height: 900px;
-        background: url("assets/portfolio-img 1.png") no-repeat right;
-        background-size: 45% 100%;
-    }
-
-    .intro-details{
-        margin-left: 147px;
+  .intro-details {
+    margin-left: 147px;
 
     .details-name {
-        font-size: 80px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 80px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-top: 240px;
-
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 80px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-top: 240px;
     }
 
     .details-profession {
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 48px;
-        letter-spacing: 0em;
-        text-align: left;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+      letter-spacing: 0em;
+      text-align: left;
     }
 
     .details-social-links > a {
-        color: black;
+      color: black;
+      font-size: 24px;
+      &:hover{
+        color: #B093BF;
+      }
+    }
+  }
+}
+
+@media (max-width: 987px) {
+  .container-main {
+    .intro {
+      background: none;
+    }
+    .intro-details {
+      margin-left: 5%;
     }
   }
 }

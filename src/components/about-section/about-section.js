@@ -5,11 +5,11 @@ import profile_img from '../../assets/profile-pic 1.png'
 
 const AboutSection = () =>{
 
-    return <div className="row about-container m-0" id="about">
-        <div className="col-6 about-col-pic">
+    return <div className="about-container m-0" id="about">
+        <div className="about-col-pic">
             <img src={profile_img} className="about-pic" />
         </div>
-       <div className="col-6 about-col-descrp">
+       <div className="about-col-descrp">
            <div className="descrp-container">
            <h1 className="about-descrp">About me</h1>
            <p>
