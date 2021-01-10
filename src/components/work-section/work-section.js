@@ -20,7 +20,7 @@ const works = [
   },
   {
     img: suvorov,
-    link: "/projects/suvorov",
+    link: "/projects/suvorov-park",
     name: "Suvorov Park website"
   },
   {

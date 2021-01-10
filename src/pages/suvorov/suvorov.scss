@@ -1,0 +1,52 @@
+@import '../../index.scss';
+
+#suvorov-container {
+  background: $suvorov-gray;
+  font-family: 'Ubuntu', sans-serif;
+
+  #suvorov-intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $spacing-vertical-large;
+
+    #suvorov-hero-img {
+      width: 60%;
+      height: auto;
+    }
+
+    p {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .suvorov-display-section {
+    padding: $spacing-vertical-large 0;
+    background: white;
+
+    h1 {
+      padding-left: $spacing-horizontal;
+    }
+
+    p {
+      padding-left: $spacing-horizontal;
+      width: 70%;
+    }
+  }
+
+  .suvorov-section {
+    padding: $spacing-vertical-large $spacing-horizontal;
+    background: white;
+
+    #suvorov-colors-img {
+      width: 60%;
+      height: auto;
+    }
+
+    #suvorov-type-img {
+      width: 15%;
+      height: auto;
+    }
+  }
+}
