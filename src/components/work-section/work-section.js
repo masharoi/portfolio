@@ -4,7 +4,7 @@ import sop from "../../assets/sop-dribbble.png";
 import hmp from "../../assets/hmp2.jpg";
 import suvorov from "../../assets/suvorov-cover.jpg";
 import melody from "../../assets/melody-cover.png";
-import contact from "../../assets/contact-cover.jpg";
+import elections from "../../assets/info-design/elections.svg";
 import {Link} from "react-router-dom";
 
 const works = [
@@ -19,6 +19,11 @@ const works = [
     name: "Home Monitoring App"
   },
   {
+    img: elections,
+    link: "/projects/info-design",
+    name: "Information design"
+  },
+  {
     img: suvorov,
     link: "/projects/suvorov-park",
     name: "Suvorov Park website"
@@ -27,11 +32,6 @@ const works = [
     img: melody,
     link: "/projects/melody",
     name: "Melody App"
-  },
-  {
-    img: contact,
-    link: "/projects/contact",
-    name: "Contact App"
   }
 ];
 

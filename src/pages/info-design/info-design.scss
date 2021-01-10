@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+#elections-container {
+  display:flex;
+  padding: $spacing-vertical-large $spacing-horizontal;
+  #elections-img-container {
+    width: 140%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    #elections-details-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: $spacing-vertical-small;
+
+      img {
+        width: 45%;
+      }
+    }
+  }
+  #elections-info {
+    margin-left: $spacing-horizontal-small;
+    p {
+      width: 50%;
+    }
+  }
+}
