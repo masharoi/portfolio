@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+#hmp-container {
+  font-family: 'Roboto', sans-serif;
+  color: $hmp-color;
+
+  #hmp-intro-container {
+    background: $hmp-background;
+    padding-left: $spacing-horizontal;
+
+    #hmp-intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh;
+      background: url("../../assets/hmp/hero.svg") no-repeat right bottom;
+      background-size: 150vh auto;
+    }
+  }
+
+  #hmp-main {
+    .hmp-section {
+      padding: $spacing-vertical-large $spacing-horizontal;
+    }
+    #hmp-components-img {
+      width: 60vw;
+      height:auto;
+    }
+    #hmp-screens-img {
+      width: 100%;
+      height:auto;
+      background: $hmp-background;
+    }
+
+  }
+
+}

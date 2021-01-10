@@ -5,12 +5,13 @@ $spacing-horizontal: 147px;
 $spacing-vertical-small: 24px;
 $spacing-vertical-medium: 48px;
 $spacing-vertical-large: 64px;
-$test-color: red;
-
 //sop
-$text-color: #021D4E;
-$sop-background:#D0D5DD;
+$sop-color: #021D4E;
+$sop-background: #D0D5DD;
 @mixin h1 {
   font-weight: bold;
   color: $text-color;
 }
+//hmp2
+$hmp-background: #E2E5EB;
+$hmp-color: #001D51;

@@ -10,27 +10,27 @@ import {Link} from "react-router-dom";
 const works = [
   {
     img: sop,
-    link: "https://www.behance.net/gallery/107745399/Second-Opinion-app",
+    link: "/projects/sop",
     name: "Second Opinion App"
   },
   {
     img: hmp,
-    link: "https://www.behance.net/gallery/107747377/Home-monitoring-app",
+    link: "/projects/hmp",
     name: "Home Monitoring App"
   },
   {
     img: suvorov,
-    link: "https://www.behance.net/gallery/86535683/UI-Suvorov-Park-Website",
+    link: "/projects/suvorov",
     name: "Suvorov Park website"
   },
   {
     img: melody,
-    link: "https://www.behance.net/gallery/83774703/Melody-Mobile-App",
+    link: "/projects/melody",
     name: "Melody App"
   },
   {
     img: contact,
-    link: "https://www.behance.net/gallery/82318209/Contact-Mobile-App",
+    link: "/projects/contact",
     name: "Contact App"
   }
 ];
@@ -44,7 +44,7 @@ const WorkSection = () => {
           return (
             <div className="img-container">
               <img src={work.img} className="work-img" />
-              <Link to={`/projects/sop`} activeClassName="active">
+              <Link to={work.link} activeClassName="active">
                 <div className="details">
                   <h3>{work.name}</h3>
                   <p>UI/UX design</p>
