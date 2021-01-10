@@ -5,6 +5,7 @@ import hmp from "../../assets/hmp2.jpg";
 import suvorov from "../../assets/suvorov-cover.jpg";
 import melody from "../../assets/melody-cover.png";
 import contact from "../../assets/contact-cover.jpg";
+import {Link} from "react-router-dom";
 
 const works = [
   {
@@ -43,15 +44,12 @@ const WorkSection = () => {
           return (
             <div className="img-container">
               <img src={work.img} className="work-img" />
-              <a
-                target="_blank"
-                href={work.link}
-              >
+              <Link to={`/projects/sop`} activeClassName="active">
                 <div className="details">
                   <h3>{work.name}</h3>
                   <p>UI/UX design</p>
                 </div>
-              </a>
+              </Link>
             </div>
           );
         })}

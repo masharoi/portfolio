@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+//spacing
+$spacing-horizontal: 147px;
+$spacing-vertical-small: 24px;
+$spacing-vertical-medium: 48px;
+$spacing-vertical-large: 64px;
+$test-color: red;
+
+//sop
+$text-color: #021D4E;
+$sop-background:#D0D5DD;
+@mixin h1 {
+  font-weight: bold;
+  color: $text-color;
+}

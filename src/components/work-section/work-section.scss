@@ -1,3 +1,4 @@
+@import '../../index.scss';
 .work-container {
   padding: 150px 0 50px 0;
 
@@ -8,12 +9,12 @@
     line-height: 64px;
     letter-spacing: 0;
     text-align: left;
-    margin-left: 175px;
+    margin-left: $spacing-horizontal;
     padding-bottom: 20px;
   }
 
   .work-list {
-    margin: 0 175px;
+    margin: 0 $spacing-horizontal;
     display: flex;
     justify-content: space-between;
 

@@ -1,0 +1,68 @@
+@import '../../index.scss';
+
+#sop-container {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+
+  #sop-intro-container {
+    background: linear-gradient(180deg, #FFFFFF 0%, #D2D7E2 100%);
+    padding-left: $spacing-horizontal;
+
+    #sop-intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh;
+      background: url("../../assets/sop/sop-hero.svg") no-repeat right bottom;
+      background-size: 150vh auto;
+    }
+  }
+
+  #sop-main {
+    .sop-section {
+      padding: $spacing-vertical-large $spacing-horizontal;
+
+      #sop-sitemap-img {
+        width: 80%;
+        height: auto;
+      }
+
+      #sop-flow-img {
+        width: 90%;
+        height: auto;
+      }
+
+      #sop-components-img {
+        width: 70%;
+        height: auto;
+      }
+    }
+
+    #style-guides-container {
+      display: flex;
+      background: $sop-background;
+
+      #type {
+        padding-left: $spacing-horizontal;
+      }
+    }
+  }
+}
+
+#sop-screens-img {
+  width: 100%;
+  height: auto;
+  background: $sop-background;
+  padding: 0 $spacing-horizontal;
+  margin-top: $spacing-vertical-medium;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.sub-title {
+  margin-bottom:$spacing-vertical-small;
+}
+
+.paragraph {}
