@@ -33,32 +33,32 @@ function Suvorov() {
         <h1 className="sub-title">Typography</h1>
         <img src={type} id="suvorov-type-img" />
       </div>
-      <div className="suvorov-display-section">
+      <div className="suvorov-section">
         <h1 className="sub-title">Home Page</h1>
         <p>
           This website is a platform for «Suvorov Park» homeowner association.
           The homeowners can vote, participate in forum, order services and
           contact the administration.
         </p>
-        <img src={home} id="suvorov-type-img" />
+        <img src={home} className="suvorov-screens-img" />
       </div>
-      <div className="suvorov-display-section">
+      <div className="suvorov-section">
         <h1 className="sub-title">Profile Page</h1>
         <p>
           This website is a platform for «Suvorov Park» homeowner association.
           The homeowners can vote, participate in forum, order services and
           contact the administration.
         </p>
-        <img src={profile} id="suvorov-type-img" />
+        <img src={profile} className="suvorov-screens-img" />
       </div>
-      <div className="suvorov-display-section">
+      <div className="suvorov-section">
         <h1 className="sub-title">Mobile</h1>
         <p>
           This website is a platform for «Suvorov Park» homeowner association.
           The homeowners can vote, participate in forum, order services and
           contact the administration.
         </p>
-        <img src={mobile} id="suvorov-type-img" />
+        <img src={mobile} id="suvorov-screens-img" />
       </div>
       <Footer />
     </div>

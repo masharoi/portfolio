@@ -24,15 +24,6 @@
   .suvorov-display-section {
     padding: $spacing-vertical-large 0;
     background: white;
-
-    h1 {
-      padding-left: $spacing-horizontal;
-    }
-
-    p {
-      padding-left: $spacing-horizontal;
-      width: 70%;
-    }
   }
 
   .suvorov-section {
@@ -46,6 +37,11 @@
 
     #suvorov-type-img {
       width: 15%;
+      height: auto;
+    }
+
+    .suvorov-screens-img {
+      width: 100%;
       height: auto;
     }
   }

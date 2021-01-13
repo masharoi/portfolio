@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
 
 //spacing
 $spacing-horizontal: 147px;
@@ -22,3 +23,8 @@ $hmp-color: #001D51;
 $suvorov-gray:#eae9e9;
 $suvorov-yellow:#EAA81B;
 $suvorov-green:#012C0B;
+
+//moon
+$moon-background:linear-gradient(180deg, #383941 0%, #010103 100%);
+$moon-black:#010103;
+$moon-green:#29BCA8;

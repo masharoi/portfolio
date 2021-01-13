@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+#moon-container {
+  font-family: 'Jura', sans-serif;
+  color: white;
+
+  #moon-intro {
+    padding: $spacing-vertical-large $spacing-horizontal;
+    background: $moon-background;
+    display: flex;
+    align-items: center;
+    #moon-hero-img {
+      width: 70%;
+    }
+    #intro-text {
+      p {
+        width: 90%;
+        a {
+          color: $moon-green;
+          text-decoration: none;
+          display:block;
+        }
+      }
+    }
+  }
+  #moon-about-section {
+    display: flex;
+    padding: $spacing-vertical-large $spacing-horizontal 0 0;
+    background: #010103;
+    .moon-about-subsection {
+      width: 90%;
+      padding-left: $spacing-horizontal;
+    }
+  }
+  .moon-section {
+    padding: $spacing-vertical-large $spacing-horizontal;
+    background: $moon-black;
+    p {
+      width: 60%;
+    }
+    .moon-screen-img {
+      width: 80%;
+    }
+    #type-section {
+      #type-inner {
+        display:flex;
+        .type-inner-subsection {
+          width:50%;
+
+        }
+
+      }
+    }
+    #color-section {
+      #color-inner {
+        justify-content: space-between;
+        display: flex;
+      }
+    }
+  }
+}

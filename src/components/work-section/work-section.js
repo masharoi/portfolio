@@ -5,9 +5,15 @@ import hmp from "../../assets/hmp2.jpg";
 import suvorov from "../../assets/suvorov-cover.jpg";
 import melody from "../../assets/melody-cover.png";
 import elections from "../../assets/info-design/elections.svg";
+import moon from "../../assets/moon-project/cover.jpg";
 import {Link} from "react-router-dom";
 
 const works = [
+  {
+    img: moon,
+    link: "/projects/moon",
+    name: "Experience the Moon"
+  },
   {
     img: sop,
     link: "/projects/sop",
