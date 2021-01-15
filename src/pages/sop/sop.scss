@@ -15,12 +15,40 @@
       height: 80vh;
       background: url("../../assets/sop/sop-hero.svg") no-repeat right bottom;
       background-size: 150vh auto;
+      background-attachment: fixed;
     }
   }
 
   #sop-main {
+    #sop-details-section {
+      display: flex;
+
+      #details-text {
+        padding-right: $spacing-horizontal;
+      }
+
+      #sop-details-img {
+        width: 35%;
+      }
+    }
+
     .sop-section {
       padding: $spacing-vertical-large $spacing-horizontal;
+
+      .paragraph {
+        width: 60%;
+
+        .bold {
+          font-weight: bold;
+        }
+      }
+
+      #sop-screens-img {
+        width: 100%;
+        height: auto;
+        background: $sop-background;
+        padding: $spacing-vertical-large $spacing-horizontal-large;
+      }
 
       #sop-sitemap-img {
         width: 80%;
@@ -33,6 +61,7 @@
       }
 
       #sop-components-img {
+        margin-top: $spacing-vertical-small;
         width: 70%;
         height: auto;
       }
@@ -41,6 +70,7 @@
     #style-guides-container {
       display: flex;
       background: $sop-background;
+      margin-top: $spacing-vertical-large;
 
       #type {
         padding-left: $spacing-horizontal;
@@ -49,20 +79,12 @@
   }
 }
 
-#sop-screens-img {
-  width: 100%;
-  height: auto;
-  background: $sop-background;
-  padding: 0 $spacing-horizontal;
+.sop-header {
+  font-size: 24px;
+  margin-bottom: 8px;
   margin-top: $spacing-vertical-medium;
 }
 
 .title {
   font-weight: bold;
 }
-
-.sub-title {
-  margin-bottom:$spacing-vertical-small;
-}
-
-.paragraph {}

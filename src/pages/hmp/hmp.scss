@@ -15,23 +15,61 @@
       height: 80vh;
       background: url("../../assets/hmp/hero.svg") no-repeat right bottom;
       background-size: 150vh auto;
+      background-attachment: fixed;
     }
   }
 
   #hmp-main {
+    #hmp-details-section {
+      display: flex;
+      justify-content: space-between;
+
+      .hmp-details-subsection {
+        width: 45%;
+      }
+    }
+
+    #styleguides-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top:$spacing-small;
+    }
+
     .hmp-section {
-      padding: $spacing-vertical-large $spacing-horizontal;
+      margin: $spacing-largest $spacing-horizontal;
+
+      #hmp-colors-img {
+        width: 35%;
+        margin-top: $spacing-vertical-small;
+      }
+
+      #hmp-type-img {
+        margin-top: $spacing-vertical-small;
+        display: block;
+        width: 20%;
+      }
     }
-    #hmp-components-img {
-      width: 60vw;
-      height:auto;
-    }
-    #hmp-screens-img {
+
+    #hmp-sitemap-img {
       width: 100%;
-      height:auto;
-      background: $hmp-background;
+      margin-top:$spacing-small;
     }
 
-  }
+    #hmp-components-img {
+      width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: $spacing-vertical-small;
+    }
 
+    .hmp-screens-img {
+      width: 100%;
+    }
+  }
+}
+
+.center {
+  text-align: center;
 }

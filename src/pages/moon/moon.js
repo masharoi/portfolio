@@ -31,6 +31,7 @@ function MoonProject() {
             <p>
               Website that allows the users to sign up for the expedition to the
               Moon.
+                <span>September – December 2020</span>
               <a
                 target="_blank"
                 href="https://www.figma.com/file/JOgPFiuguSIURfmuqQssfu/explore-the-moon?node-id=312%3A146"
