@@ -16,6 +16,7 @@
       background: url("../../assets/hmp/hero.svg") no-repeat right bottom;
       background-size: 150vh auto;
       background-attachment: fixed;
+
       .intro-subsection {
         margin-top: $spacing-small;
 
@@ -40,7 +41,18 @@
     #styleguides-container {
       display: flex;
       justify-content: space-around;
-      margin-top:$spacing-small;
+      margin-top: $spacing-small;
+    }
+
+    .hmp-screens {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+
+      .details {
+        width: 25%;
+
+      }
     }
 
     .hmp-section {
@@ -60,7 +72,7 @@
 
     #hmp-sitemap-img {
       width: 100%;
-      margin-top:$spacing-small;
+      margin-top: $spacing-small;
     }
 
     #hmp-components-img {
@@ -73,7 +85,7 @@
     }
 
     .hmp-screens-img {
-      width: 100%;
+      width: 70%;
     }
   }
 }

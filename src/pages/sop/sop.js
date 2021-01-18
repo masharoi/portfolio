@@ -9,7 +9,7 @@ import screens from "../../assets/sop/screens.svg";
 import detailsImg from "../../assets/sop/detail-img.svg";
 import sketches from "../../assets/sop/sketches.png";
 import NavBar from "../../components/nav-bar/nav-bar";
-import { SiFigma} from "react-icons/si";
+import {SiFigma} from "react-icons/si";
 
 function SecondOpinion() {
   return (
@@ -80,7 +80,7 @@ function SecondOpinion() {
             <img src={detailsImg} id="sop-details-img" />
           </div>
 
-          <div className="sop-section">
+          <div id="flow-section" className="sop-section">
             <h2 className="sop-header">User flow</h2>
             <p className="paragraph">
               One of the major goals of this project was to simplify the
@@ -101,9 +101,9 @@ function SecondOpinion() {
             </p>
           </div>
           <img src={userflow} id="sop-flow-img" />
-          <div className="sop-section">
-            <h2 className="sop-header">Initial sketches</h2>
-          </div>
+          <h2 className="sop-header" id="sketches-header">
+            Initial sketches
+          </h2>
           <img src={sketches} id="sop-sketches-img" />
           <div className="sop-section" id="style-guides-container">
             <div id="colors">

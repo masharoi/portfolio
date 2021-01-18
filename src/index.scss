@@ -1,6 +1,6 @@
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 //spacing
@@ -59,4 +59,12 @@ h2 {
 
 h3 {
   font-size: 16px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.medium {
+  font-weight: 500;
 }

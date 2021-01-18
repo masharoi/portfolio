@@ -33,18 +33,38 @@ function Suvorov() {
           </div>
           <div className="intro-subsection">
             <h3>
+              <strong>Collaborators</strong>
+            </h3>
+            <h3>
+              <a
+                className="suvorov-link"
+                target="_blank"
+                href="http://fedorgrab.com/"
+              >
+                Fedor Grab
+              </a>
+            </h3>
+          </div>
+          <div className="intro-subsection">
+            <h3>
+              <strong>Demo</strong>
+            </h3>
+            <h3>
+              <a
+                className="suvorov-link"
+                target="_blank"
+                href="http://suvorovpark.ru/"
+              >
+                suvorovpark.ru
+              </a>
+            </h3>
+          </div>
+          <div className="intro-subsection">
+            <h3>
               <strong>Tools</strong>
             </h3>
             <SiReact className="icon" />
             <SiFigma className="icon" />
-          </div>
-          <div className="intro-subsection">
-            <a
-              target="_blank"
-              href="https://github.com/masharoi/suvorov-park-website"
-            >
-              View source code
-            </a>
           </div>
         </div>
 
@@ -58,6 +78,13 @@ function Suvorov() {
           develop a fully functioning responsive website that would allow the
           homeowners to vote, participate in forums, order services and contact
           the administration.
+          <a
+            className="suvorov-link"
+            target="_blank"
+            href="https://github.com/masharoi/suvorov-park-website"
+          >
+            View source code
+          </a>
         </p>
       </div>
       <div className="suvorov-section">
@@ -71,27 +98,25 @@ function Suvorov() {
       <div className="suvorov-section">
         <h1 className="sub-title">Home Page</h1>
         <p>
-          This website is a platform for «Suvorov Park» homeowner association.
-          The homeowners can vote, participate in forum, order services and
-          contact the administration.
+          Home page contains information about the homeowner association,
+          contact information, address and images of the neighbourhood.
         </p>
         <img src={home} className="suvorov-screens-img" />
       </div>
       <div className="suvorov-section">
         <h1 className="sub-title">Profile Page</h1>
         <p>
-          This website is a platform for «Suvorov Park» homeowner association.
-          The homeowners can vote, participate in forum, order services and
-          contact the administration.
+          Only “Suvorov park” homeowners can access the Profile page. Here they
+          can vote, participate in forums, order services, contact the
+          administration and read the latest news.
         </p>
         <img src={profile} className="suvorov-screens-img" />
       </div>
       <div className="suvorov-section">
         <h1 className="sub-title">Mobile</h1>
         <p>
-          This website is a platform for «Suvorov Park» homeowner association.
-          The homeowners can vote, participate in forum, order services and
-          contact the administration.
+          “Suvorov park” website is responsive and can be viewed on different
+          screen sizes.
         </p>
         <img src={mobile} id="suvorov-screens-img" />
       </div>

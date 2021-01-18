@@ -43,17 +43,31 @@
 
     #sop-flow-img {
       width: 100%;
-      padding: $spacing-vertical-large $spacing-horizontal;
+      padding: $spacing-large $spacing-horizontal;
       background: $sop-gray;
+      margin-bottom: $spacing-large;
     }
 
     #sop-sketches-img {
       width: 100%;
       height: auto;
+      padding: $spacing-large $spacing-horizontal;
+      background: $sop-gray;
+
+    }
+
+    #sketches-header {
+      margin-left:$spacing-horizontal;
+      margin-top:$spacing-large;
+      margin-bottom: $spacing-small;
+    }
+
+    #flow-section {
+      padding-bottom: $spacing-small;
     }
 
     .sop-section {
-      padding: $spacing-vertical-large $spacing-horizontal;
+      padding: $spacing-large $spacing-horizontal;
 
       .paragraph {
         width: 60%;
@@ -67,11 +81,11 @@
         width: 100%;
         height: auto;
         background: $sop-background;
-        padding: $spacing-vertical-large $spacing-horizontal-large;
+        padding: $spacing-large $spacing-horizontal-large;
       }
 
       #sop-components-img {
-        margin-top: $spacing-vertical-small;
+        margin-top: $spacing-small;
         width: 70%;
         height: auto;
       }
@@ -79,7 +93,7 @@
 
     #style-guides-container {
       display: flex;
-      margin-top: $spacing-vertical-large;
+      margin-top: $spacing-large;
 
       #type {
         padding-left: $spacing-horizontal;
@@ -90,7 +104,7 @@
 
 .sop-header {
   margin-bottom: 8px;
-  margin-top: $spacing-vertical-medium;
+  margin-top: $spacing-medium;
 }
 
 .title {

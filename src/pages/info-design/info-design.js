@@ -19,15 +19,15 @@ function InfoDesign() {
           <strong>Information design</strong>
         </h1>
         <div className="intro-subsection">
-          <h4>
+          <h3>
             <strong>Timeline</strong>
-          </h4>
-          <h4>September - December 2020</h4>
+          </h3>
+          <h3>September - December 2020</h3>
         </div>
         <div className="intro-subsection">
-          <h4>
+          <h3>
             <strong>Tools</strong>
-          </h4>
+          </h3>
           <DiIllustrator  className="icon"/>
           <SiMicrosoftexcel className="icon"/>
         </div>

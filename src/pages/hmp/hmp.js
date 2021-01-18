@@ -8,7 +8,8 @@ import colors from "../../assets/hmp/colors.svg";
 import type from "../../assets/hmp/type.svg";
 import components from "../../assets/hmp/components.svg";
 import screens from "../../assets/hmp/screens.svg";
-import { SiFigma} from "react-icons/si";
+import screens2 from "../../assets/hmp/screens2.svg";
+import {SiFigma} from "react-icons/si";
 
 function HomeMonitoring() {
   return (
@@ -89,8 +90,29 @@ function HomeMonitoring() {
             <h1 className="sop-header center">UI Components</h1>
             <img src={components} id="hmp-components-img" />
           </div>
-          <div className="hmp-section">
+          <div className="hmp-section hmp-screens">
+            <div className="details">
+              <h1 className="">Log data</h1>
+              <p className="paragraph">
+                The users can log their health data, such as weight, fluid
+                intake, oxygen saturation, heart rate, add comments and answer
+                questions related to their health. They can also edit their logs
+                and upload images if necessary.
+              </p>
+            </div>
             <img src={screens} className="hmp-screens-img" />
+          </div>
+          <div className="hmp-section hmp-screens">
+            <img src={screens2} className="hmp-screens-img" />
+            <div className="details">
+              <h1 className="">Explore graphs & tables</h1>
+              <p className="paragraph">
+                The users can view how their health data changes over time. They
+                can switch between graph and table view, see if they have
+                uploaded a picture on the same day, any additional notes and
+                what tags they used to describe their condition.
+              </p>
+            </div>
           </div>
         </div>
       </div>

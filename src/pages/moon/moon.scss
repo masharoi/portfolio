@@ -21,16 +21,6 @@
           font-size: 24px;
           margin-right: $spacing-tiny;
         }
-
-        a {
-          color: $moon-green;
-          text-decoration: none;
-          display: block;
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-
       }
     }
   }
@@ -43,9 +33,7 @@
     .moon-about-subsection {
       width: 90%;
       padding-left: $spacing-horizontal;
-      .header {
-        font-weight: bold;
-      }
+
       p {
         margin-bottom: $spacing-medium;
       }
@@ -69,20 +57,38 @@
     }
 
     #type-section {
+      margin-top: $spacing-medium;
+
       #type-inner {
+        font-family: 'Jura', sans-serif;
         display: flex;
 
         .type-inner-subsection {
+          p {
+            font-family: 'Lato', sans-serif;
+          }
           width: 50%;
         }
       }
     }
 
     #color-section {
+      margin-top: $spacing-medium;
+
       #color-inner {
         justify-content: space-between;
         display: flex;
       }
     }
+  }
+}
+
+a {
+  color: $moon-green;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $moon-green;
   }
 }
