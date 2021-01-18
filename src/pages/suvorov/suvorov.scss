@@ -2,32 +2,47 @@
 
 #suvorov-container {
   background: $suvorov-gray;
-  font-family: 'Ubuntu', sans-serif;
 
   #suvorov-intro-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: $spacing-vertical-large;
+    justify-content: space-between;
 
-    #suvorov-hero-img {
-      width: 60%;
-      height: auto;
+    padding: $spacing-large $spacing-horizontal;
+
+
+    #intro-details {
+      .intro-subsection {
+        margin-top:$spacing-small;
+        .icon {
+          font-size: 24px;
+          margin-right: $spacing-tiny;
+        }
+        a {
+          color: $suvorov-orange;
+          text-decoration: none;
+          display: block;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
     }
 
-    p {
+    #suvorov-hero-img {
       width: 50%;
-      text-align: center;
+      height: auto;
     }
   }
 
   .suvorov-display-section {
-    padding: $spacing-vertical-large 0;
+    padding: $spacing-large 0;
     background: white;
   }
 
   .suvorov-section {
-    padding: $spacing-vertical-large $spacing-horizontal;
+    padding: $spacing-large $spacing-horizontal;
     background: white;
 
     #suvorov-colors-img {

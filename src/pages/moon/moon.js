@@ -14,6 +14,8 @@ import requirements from "../../assets/moon-project/requirements.png";
 import activities from "../../assets/moon-project/activities.png";
 import application from "../../assets/moon-project/application.png";
 import mobile from "../../assets/moon-project/mobile.png";
+import sketches from "../../assets/moon-project/sketches.png";
+import {SiFigma} from "react-icons/si";
 
 function MoonProject() {
   return (
@@ -28,24 +30,39 @@ function MoonProject() {
               Moon
               <br />
             </h1>
-            <p>
-              Website that allows the users to sign up for the expedition to the
-              Moon.
-                <span>September – December 2020</span>
+            <div className="intro-subsection">
+              <h3>
+                <strong>Timeline</strong>
+              </h3>
+              <h3>September – December 2020</h3>
+            </div>
+            <div className="intro-subsection">
+              <h3>
+                <strong>Role</strong>
+              </h3>
+              <h3>UI/UX design </h3>
+            </div>
+            <div className="intro-subsection">
+              <h3>
+                <strong>Tools</strong>
+              </h3>
+              <SiFigma className="icon" />
+            </div>
+            <div className="intro-subsection">
               <a
                 target="_blank"
                 href="https://www.figma.com/file/JOgPFiuguSIURfmuqQssfu/explore-the-moon?node-id=312%3A146"
               >
                 View Figma file
               </a>
-            </p>
+            </div>
           </div>
           <img src={hero} id="moon-hero-img" />
         </div>
 
         <div id="moon-about-section">
           <div className="moon-about-subsection">
-            <h3 className="sub-title">About</h3>
+            <h3 className="header">About</h3>
             <p>
               In a distant future the humanity had already built multiple Moon
               bases and the colonies are growing rapidly. MOON EXPEDITIONS is a
@@ -54,7 +71,7 @@ function MoonProject() {
               for the expedition and learn more about the trip and the
               conditions on the Moon.
             </p>
-            <h3 className="sub-title">Users</h3>
+            <h3 className="header">Users</h3>
             <p>
               The primary users of the website are those who like to do active
               and potentially dangerous sports or/and like to travel to
@@ -64,20 +81,25 @@ function MoonProject() {
             </p>
           </div>
           <div className="moon-about-subsection">
-            <h3 className="sub-title">Problem</h3>
+            <h3 className="header">Problem</h3>
             <p>
               There has always been people that crave unconventional and often
               times dangerous experiences. Travelling to remote places on our
               planet is one way to satisfy that need. However, when you have
               been everywhere, where else can you go?
             </p>
-            <h3 className="sub-title">Solution</h3>
+            <h3 className="header">Solution</h3>
             <p>
               Travelling to the Moon is the ultimate destination for the thrill
               seaking adventurers.
             </p>
           </div>
         </div>
+
+        <div className="moon-section">
+          <h1 className="sub-title">Research</h1>
+        </div>
+        <img src={sketches} id="moon-sketches-img" />
 
         <div className="moon-section">
           <h1 className="sub-title">Styleguide</h1>

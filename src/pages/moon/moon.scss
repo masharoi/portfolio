@@ -1,56 +1,83 @@
 @import '../../index.scss';
 
 #moon-container {
-  font-family: 'Jura', sans-serif;
   color: white;
 
   #moon-intro {
-    padding: $spacing-vertical-large $spacing-horizontal;
+    padding: $spacing-large $spacing-horizontal;
     background: $moon-background;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+
     #moon-hero-img {
-      width: 70%;
+      width: 60%;
     }
+
     #intro-text {
-      p {
-        width: 90%;
+      .intro-subsection {
+        margin-top: $spacing-small;
+
+        .icon {
+          font-size: 24px;
+          margin-right: $spacing-tiny;
+        }
+
         a {
           color: $moon-green;
           text-decoration: none;
-          display:block;
+          display: block;
+          &:hover {
+            text-decoration: underline;
+          }
         }
+
       }
     }
   }
+
   #moon-about-section {
     display: flex;
-    padding: $spacing-vertical-large $spacing-horizontal 0 0;
+    padding: $spacing-large $spacing-horizontal 0 0;
     background: #010103;
+
     .moon-about-subsection {
       width: 90%;
       padding-left: $spacing-horizontal;
+      .header {
+        font-weight: bold;
+      }
+      p {
+        margin-bottom: $spacing-medium;
+      }
     }
   }
+
+  #moon-sketches-img {
+    width: 100%;
+  }
+
   .moon-section {
-    padding: $spacing-vertical-large $spacing-horizontal;
+    padding: $spacing-large $spacing-horizontal;
     background: $moon-black;
+
     p {
       width: 60%;
     }
+
     .moon-screen-img {
       width: 80%;
     }
+
     #type-section {
       #type-inner {
-        display:flex;
+        display: flex;
+
         .type-inner-subsection {
-          width:50%;
-
+          width: 50%;
         }
-
       }
     }
+
     #color-section {
       #color-inner {
         justify-content: space-between;

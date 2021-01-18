@@ -16,6 +16,14 @@
       background: url("../../assets/hmp/hero.svg") no-repeat right bottom;
       background-size: 150vh auto;
       background-attachment: fixed;
+      .intro-subsection {
+        margin-top: $spacing-small;
+
+        .icon {
+          font-size: 24px;
+          margin-right: $spacing-tiny;
+        }
+      }
     }
   }
 

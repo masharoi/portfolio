@@ -11,6 +11,7 @@ $spacing-vertical-small: 24px;
 $spacing-vertical-medium: 48px;
 $spacing-vertical-large: 64px;
 //
+$spacing-tiny: 8px;
 $spacing-small: 24px;
 $spacing-medium: 48px;
 $spacing-large: 64px;
@@ -37,8 +38,25 @@ $hmp-color: #001D51;
 $suvorov-gray:#eae9e9;
 $suvorov-yellow:#EAA81B;
 $suvorov-green:#012C0B;
+$suvorov-orange:#C95501;
 
 //moon
 $moon-background:linear-gradient(180deg, #383941 0%, #010103 100%);
 $moon-black:#010103;
 $moon-green:#29BCA8;
+
+//main
+$primary-color:#f4f0f6;
+$secondary-color:#B093BF;
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}

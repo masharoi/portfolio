@@ -1,19 +1,36 @@
 @import '../../index.scss';
-
+#info-intro-container {
+  padding: $spacing-large $spacing-horizontal;
+  background: $primary-color;
+  h1, .intro-subsection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .intro-subsection {
+    padding-top:$spacing-small;
+    .icon {
+      font-size: 24px;
+      margin-right: $spacing-tiny;
+    }
+  }
+}
 #elections-container {
-  display:flex;
-  padding: $spacing-vertical-large $spacing-horizontal;
+  padding: $spacing-large $spacing-horizontal;
   #elections-img-container {
-    width: 140%;
+    width: 100%;
     img {
-      width: 100%;
+      width: 70%;
       height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
     }
     #elections-details-container {
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-      margin-top: $spacing-vertical-small;
+      margin-top: $spacing-small;
 
       img {
         width: 45%;
@@ -21,9 +38,17 @@
     }
   }
   #elections-info {
-    margin-left: $spacing-horizontal-small;
-    p {
-      width: 50%;
-    }
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.info-link {
+  color:$secondary-color;
+  font-weight: bold;
+  &:hover {
+    color:$secondary-color;
+    
   }
 }

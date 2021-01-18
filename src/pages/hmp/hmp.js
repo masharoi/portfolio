@@ -8,6 +8,7 @@ import colors from "../../assets/hmp/colors.svg";
 import type from "../../assets/hmp/type.svg";
 import components from "../../assets/hmp/components.svg";
 import screens from "../../assets/hmp/screens.svg";
+import { SiFigma} from "react-icons/si";
 
 function HomeMonitoring() {
   return (
@@ -20,7 +21,24 @@ function HomeMonitoring() {
               <strong>Home Monitoring</strong>
             </h1>
             <h1>Mobile App</h1>
-            <span>January – June 2020</span>
+            <div className="intro-subsection">
+              <h3>
+                <strong>Timeline</strong>
+              </h3>
+              <h3>January – June 2020</h3>
+            </div>
+            <div className="intro-subsection">
+              <h3>
+                <strong>Role</strong>
+              </h3>
+              <h3>UI/UX design </h3>
+            </div>
+            <div className="intro-subsection">
+              <h3>
+                <strong>Tools</strong>
+              </h3>
+              <SiFigma className="icon" />
+            </div>
           </div>
         </div>
         <div id="hmp-main">
