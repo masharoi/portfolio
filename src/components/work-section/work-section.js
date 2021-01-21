@@ -3,41 +3,47 @@ import "./work-section.scss";
 import sop from "../../assets/sop-dribbble.png";
 import hmp from "../../assets/hmp2.jpg";
 import suvorov from "../../assets/suvorov-cover.jpg";
-import melody from "../../assets/melody-cover.png";
 import elections from "../../assets/info-design/elections.svg";
 import moon from "../../assets/moon-project/cover.jpg";
+import newLand from "../../assets/illustrations/new-land.jpg";
 import {Link} from "react-router-dom";
 
 const works = [
   {
     img: moon,
     link: "/projects/moon",
-    name: "Experience the Moon"
+    name: "Experience the Moon",
+    role: "UI/UX design"
   },
   {
     img: sop,
     link: "/projects/sop",
-    name: "Second Opinion App"
+    name: "Second Opinion App",
+    role: "UI/UX design"
   },
   {
     img: hmp,
     link: "/projects/hmp",
-    name: "Home Monitoring App"
+    name: "Home Monitoring App",
+    role: "UI/UX design"
   },
   {
     img: elections,
     link: "/projects/info-design",
-    name: "Information design"
+    name: "Information design",
+    role: ""
   },
   {
     img: suvorov,
     link: "/projects/suvorov-park",
-    name: "Suvorov Park website"
+    name: "Suvorov Park website",
+    role: "Web design & development"
   },
   {
-    img: melody,
-    link: "/projects/melody",
-    name: "Melody App"
+    img: newLand,
+    link: "/projects/illustrations",
+    name: "Digital illustration",
+    role: ""
   }
 ];
 
@@ -53,7 +59,7 @@ const WorkSection = () => {
               <Link to={work.link} activeClassName="active">
                 <div className="details">
                   <h3>{work.name}</h3>
-                  <p>UI/UX design</p>
+                  <p>{work.role}</p>
                 </div>
               </Link>
             </div>

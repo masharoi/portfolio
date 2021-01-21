@@ -15,6 +15,7 @@ import activities from "../../assets/moon-project/activities.png";
 import application from "../../assets/moon-project/application.png";
 import mobile from "../../assets/moon-project/mobile.png";
 import sketches from "../../assets/moon-project/sketches.png";
+import recording from "../../assets/moon-project/moon-recording.gif";
 import {SiFigma} from "react-icons/si";
 
 function MoonProject() {
@@ -57,7 +58,9 @@ function MoonProject() {
               </a>
             </div>
           </div>
-          <img src={hero} id="moon-hero-img" />
+          <div id="hero-container">
+            <img src={hero} id="moon-hero-img" />
+          </div>
         </div>
 
         <div id="moon-about-section">
@@ -146,55 +149,53 @@ function MoonProject() {
           <div id="color-section">
             <h3 className="bold">Color palette</h3>
             <div id="color-inner">
-              <div className="color-block">
-                <img src={white} className="moon-color-img" />
+              <div className="color-blocks">
+                <div className="color-block">
+                  <img src={white} className="moon-color-img" />
+                </div>
+                <div className="color-block">
+                  <img src={gray} className="moon-color-img" />
+                </div>
               </div>
-              <div className="color-block">
-                <img src={gray} className="moon-color-img" />
-              </div>
-              <div className="color-block">
-                <img src={yellow} className="moon-color-img" />
-              </div>
-              <div className="color-block">
-                <img src={green} className="moon-color-img" />
+              <div className="color-blocks">
+                <div className="color-block">
+                  <img src={yellow} className="moon-color-img" />
+                </div>
+                <div className="color-block">
+                  <img src={green} className="moon-color-img" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="moon-section">
           <h1 className="sub-title">Home Page</h1>
-          <p>
-          </p>
+          <p></p>
           <img src={home} className="moon-screen-img" />
         </div>
         <div className="moon-section">
           <h1 className="sub-title">Flight</h1>
-          <p>
-          </p>
+          <p></p>
           <img src={flight} className="moon-screen-img" />
         </div>
         <div className="moon-section">
           <h1 className="sub-title">Destination</h1>
-          <p>
-          </p>
+          <p></p>
           <img src={destination} className="moon-screen-img" />
         </div>
         <div className="moon-section">
           <h1 className="sub-title">Requirements</h1>
-          <p>
-          </p>
+          <p></p>
           <img src={requirements} className="moon-screen-img" />
         </div>
         <div className="moon-section">
           <h1 className="sub-title">Activities</h1>
-          <p>
-          </p>
+          <p></p>
           <img src={activities} className="moon-screen-img" />
         </div>
         <div className="moon-section">
           <h1 className="sub-title">Application</h1>
-          <p>
-          </p>
+          <p></p>
           <img src={application} className="moon-screen-img" />
         </div>
         <div className="moon-section">

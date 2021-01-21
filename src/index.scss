@@ -2,24 +2,21 @@
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
 //spacing
 $spacing-horizontal: 147px;
-$spacing-horizontal-small:24px;
-$spacing-horizontal-large:64px;
+$spacing-horizontal-small: 24px;
+$spacing-horizontal-large: 64px;
 $spacing-vertical-small: 24px;
 $spacing-vertical-medium: 48px;
-$spacing-vertical-large: 64px;
-//
+$spacing-vertical-large: 64px; //
 $spacing-tiny: 8px;
 $spacing-small: 24px;
 $spacing-medium: 48px;
 $spacing-large: 64px;
-$spacing-largest:128px;
-//sop
+$spacing-largest: 128px; //sop
 $sop-color: #021D4E;
 $sop-background: #D0D5DD;
-$sop-gray:#F7F7F7;
+$sop-gray: #F7F7F7;
 @mixin h1 {
   font-weight: bold;
   color: $text-color;
@@ -33,21 +30,20 @@ $hmp-color: #001D51;
   margin-bottom: 8px;
   margin-top: $spacing-vertical-medium;
 }
-
 //suvorov-park
-$suvorov-gray:#eae9e9;
-$suvorov-yellow:#EAA81B;
-$suvorov-green:#012C0B;
-$suvorov-orange:#C95501;
-
+$suvorov-gray: #eae9e9;
+$suvorov-yellow: #EAA81B;
+$suvorov-green: #012C0B;
+$suvorov-orange: #C95501;
 //moon
-$moon-background:linear-gradient(180deg, #383941 0%, #010103 100%);
-$moon-black:#010103;
-$moon-green:#29BCA8;
-
+$moon-background: linear-gradient(180deg, #383941 0%, #010103 100%);
+$moon-black: #010103;
+$moon-green: #29BCA8;
+//Melody
+$melody-black: #323232;
 //main
-$primary-color:#f4f0f6;
-$secondary-color:#B093BF;
+$primary-color: #f4f0f6;
+$secondary-color: #B093BF;
 
 h1 {
   font-size: 36px;

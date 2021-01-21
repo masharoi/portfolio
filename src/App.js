@@ -9,6 +9,7 @@ import HomeMonitoring from "./pages/hmp/hmp";
 import Suvorov from "./pages/suvorov/suvorov";
 import InfoDesign from "./pages/info-design/info-design";
 import MoonProject from "./pages/moon/moon";
+import Illustrations from "./pages/illustrations/illustrations";
 import ScrollToTop from "./components/scroll-to-top";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/projects/suvorov-park" component={Suvorov}/>
           <Route exact path="/projects/info-design" component={InfoDesign}/>
           <Route exact path="/projects/moon" component={MoonProject}/>
+          <Route exact path="/projects/illustrations" component={Illustrations}/>
         </Switch>
       </ScrollToTop>
     </Router>

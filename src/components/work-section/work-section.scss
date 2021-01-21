@@ -24,7 +24,13 @@
       position:relative;
       margin-bottom: 50px;
 
+      .work-img {
+        border-radius: 5px;
+      }
+
+
       .details {
+        border-radius: 5px;
         color: black;
         position:absolute;
         top:0;

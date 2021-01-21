@@ -1,0 +1,27 @@
+@import '../../index.scss';
+#gallery-intro {
+  text-align: center;
+  width: 40%;
+  margin: $spacing-large 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+#gallery {
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
+  margin: 0 $spacing-large;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.link {
+  color:$secondary-color;
+  font-weight: bold;
+  &:hover {
+    color:$secondary-color;
+
+  }
+}

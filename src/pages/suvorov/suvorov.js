@@ -5,8 +5,8 @@ import Footer from "../../components/footer/footer";
 import hero from "../../assets/suvorov/hero.svg";
 import colors from "../../assets/suvorov/colors.svg";
 import type from "../../assets/suvorov/type.svg";
-import home from "../../assets/suvorov/home-page.svg";
-import profile from "../../assets/suvorov/profile.svg";
+import home from "../../assets/suvorov/home-page.png";
+import profile from "../../assets/suvorov/profile.png";
 import mobile from "../../assets/suvorov/mobile.svg";
 import {SiReact, SiFigma} from "react-icons/si";
 

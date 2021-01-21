@@ -1,0 +1,43 @@
+@import '../../index.scss';
+
+#archive-container {
+  margin: $spacing-large $spacing-horizontal;
+
+  #archive-subsection {
+    display: flex;
+    justify-content: space-between;
+
+    .archive-img {
+      width: 50%;
+      height: auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: $spacing-tiny 0;
+        cursor:pointer;
+      }
+
+      .archive-selected {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -20px;
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          -moz-border-radius: 7.5px;
+          -webkit-border-radius: 7.5px;
+          border-radius: 7.5px;
+          border: 1.5px solid black;
+        }
+      }
+    }
+  }
+}
