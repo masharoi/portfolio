@@ -32,8 +32,8 @@ function InfoDesign() {
           <SiMicrosoftexcel className="icon"/>
         </div>
       </div>
-      <div id="elections-container">
-        <div id="elections-info">
+      <div className="info-container">
+        <div className="info-text">
           <h1>
             United States <br /> general election
           </h1>
@@ -49,13 +49,13 @@ function InfoDesign() {
             </a>
           </p>
         </div>
-        <div id="elections-img-container">
+        <div className="info-img-container">
           <img src={elections} id="info-elections-img" />
         </div>
       </div>
 
-      <div id="elections-container">
-        <div id="elections-info">
+      <div className="info-container">
+        <div className="info-text">
           <h1>
             Timeline of <br /> voting rights
           </h1>
@@ -79,7 +79,7 @@ function InfoDesign() {
             </a>
           </p>
         </div>
-        <div id="elections-img-container">
+        <div className="info-img-container">
           <img src={votingRights} id="info-elections-img" />
         </div>
       </div>

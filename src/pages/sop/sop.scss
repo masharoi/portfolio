@@ -1,7 +1,6 @@
 @import '../../index.scss';
 
 #sop-container {
-  font-family: 'Roboto', sans-serif;
   color: $sop-color;
 
   #sop-intro-container {
@@ -34,6 +33,18 @@
 
       #details-text {
         padding-right: $spacing-horizontal;
+
+        a {
+          color: $bch-blue;
+          font-weight: bold;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+            color: $bch-blue;
+          }
+        }
+
+
       }
 
       #sop-details-img {
@@ -53,12 +64,11 @@
       height: auto;
       padding: $spacing-large $spacing-horizontal;
       background: $sop-gray;
-
     }
 
     #sketches-header {
-      margin-left:$spacing-horizontal;
-      margin-top:$spacing-large;
+      margin-left: $spacing-horizontal;
+      margin-top: $spacing-large;
       margin-bottom: $spacing-small;
     }
 
@@ -109,4 +119,119 @@
 
 .title {
   font-weight: bold;
+}
+@media (max-width: 1000px) {
+  #sop-container {
+    #sop-intro-container {
+      padding-left: 0;
+
+      #sop-intro {
+        background-size: 100vh auto;
+        padding-left: $spacing-medium;
+      }
+    }
+
+    #sop-main {
+      #sop-details-section {
+        flex-direction: column;
+
+        #details-text {
+          padding-right: 0;
+        }
+
+        #sop-details-img {
+          width: 100%;
+          margin-top: $spacing-small;
+        }
+      }
+
+      #sop-flow-img {
+        width: 100%;
+        padding: $spacing-medium;
+      }
+
+      #sop-sketches-img {
+        padding: $spacing-medium;
+      }
+
+      #sketches-header {
+        margin-left: $spacing-medium;
+        margin-top: $spacing-medium;
+        margin-bottom: $spacing-small;
+      }
+
+      #flow-section {
+        padding-bottom: $spacing-small;
+      }
+
+      .sop-section {
+        padding: $spacing-medium;
+
+        .paragraph {
+          width: 100%;
+        }
+
+        #sop-screens-img {
+          padding: $spacing-small;
+        }
+
+        #sop-components-img {
+          width: 100%;
+        }
+      }
+
+      #style-guides-container {
+        margin-top: $spacing-medium;
+        flex-direction: column;
+
+        #colors {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        #type {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #sop-container {
+    #sop-intro-container {
+      padding-left: 0;
+
+      #sop-intro {
+        background-size: 60vh auto;
+        padding-left: $spacing-small;
+      }
+    }
+
+    #sop-main {
+      #sop-details-section {
+        #sop-details-img {
+          margin-top: $spacing-small;
+        }
+      }
+
+      #sop-flow-img {
+        padding: $spacing-small;
+      }
+
+      #sop-sketches-img {
+        padding: $spacing-small;
+      }
+
+      #sketches-header {
+        margin-left: $spacing-small;
+        margin-top: $spacing-small;
+      }
+
+      .sop-section {
+        padding: $spacing-small;
+      }
+    }
+  }
 }

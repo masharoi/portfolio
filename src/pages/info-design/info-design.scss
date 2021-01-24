@@ -1,24 +1,32 @@
 @import '../../index.scss';
+
 #info-intro-container {
   padding: $spacing-large $spacing-horizontal;
   background: $primary-color;
-  h1, .intro-subsection {
+
+  .intro-subsection,
+  h1 {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
+
   .intro-subsection {
-    padding-top:$spacing-small;
+    padding-top: $spacing-small;
+
     .icon {
       font-size: 24px;
       margin-right: $spacing-tiny;
     }
   }
 }
-#elections-container {
+
+.info-container {
   padding: $spacing-large $spacing-horizontal;
-  #elections-img-container {
+
+  .info-img-container {
     width: 100%;
+
     img {
       width: 70%;
       height: auto;
@@ -26,18 +34,9 @@
       margin-right: auto;
       display: block;
     }
-    #elections-details-container {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      margin-top: $spacing-small;
-
-      img {
-        width: 45%;
-      }
-    }
   }
-  #elections-info {
+
+  .info-text {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -45,10 +44,45 @@
 }
 
 .info-link {
-  color:$secondary-color;
+  color: $secondary-color;
   font-weight: bold;
+
   &:hover {
-    color:$secondary-color;
-    
+    color: $secondary-color;
+  }
+}
+@media (max-width: 1000px) {
+  #info-intro-container {
+    padding: $spacing-medium;
+
+    .intro-subsection,
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .info-container {
+    padding: $spacing-medium;
+
+    .info-img-container {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info-text {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  #info-intro-container {
+    padding: $spacing-small;
+  }
+
+  .info-container {
+    padding: $spacing-small;
   }
 }

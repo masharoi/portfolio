@@ -26,11 +26,6 @@
     }
   }
 
-  .suvorov-display-section {
-    padding: $spacing-large 0;
-    background: white;
-  }
-
   .suvorov-section {
     padding: $spacing-large $spacing-horizontal;
     background: white;
@@ -66,5 +61,57 @@
   &:hover {
     color: $suvorov-orange;
     text-decoration: underline;
+  }
+}
+@media (max-width: 1000px) {
+  #suvorov-container {
+    #suvorov-intro-container {
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      padding: $spacing-medium;
+
+      #intro-details {
+        margin-top: $spacing-medium;
+      }
+
+      #suvorov-hero-img {
+        width: 100%;
+      }
+    }
+
+    .suvorov-section {
+      padding: $spacing-medium;
+
+      p {
+        width: 100%;
+      }
+
+      #suvorov-colors-img {
+        width: 60%;
+      }
+
+      #suvorov-type-img {
+        width: 20%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #suvorov-container {
+    #suvorov-intro-container {
+      padding: $spacing-small;
+    }
+
+    .suvorov-section {
+      padding: $spacing-small;
+
+      #suvorov-colors-img {
+        width: 100%;
+      }
+
+      #suvorov-type-img {
+        width: 50%;
+      }
+    }
   }
 }

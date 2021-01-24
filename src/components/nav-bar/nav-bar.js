@@ -9,9 +9,9 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll";
-import { Nav, Navbar } from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import resume from "../../assets/maria-zaytseva-resume.pdf";
-
+import {Link as RouterLink} from "react-router-dom";
 
 class NavBar extends React.Component {
   handleSetActive = to => {
@@ -24,9 +24,9 @@ class NavBar extends React.Component {
 
   listenScrollEvent = e => {
     if (window.scrollY > 50) {
-      this.setState({ bg: "light" });
+      this.setState({bg: "light"});
     } else {
-      this.setState({ bg: "transparent" });
+      this.setState({bg: "transparent"});
     }
   };
 
@@ -48,7 +48,7 @@ class NavBar extends React.Component {
               offset={0}
               duration={500}
               className="nav-link"
-              href="#home"
+              href="/#home"
             >
               Home
             </Link>
@@ -61,7 +61,7 @@ class NavBar extends React.Component {
               offset={0}
               duration={500}
               className="nav-link"
-              href="#about"
+              href="/#about"
             >
               About
             </Link>
@@ -74,15 +74,11 @@ class NavBar extends React.Component {
               offset={0}
               duration={500}
               className="nav-link"
-              href="#work"
+              href="/#work"
             >
               Projects
             </Link>
-            <a
-              target="_blank"
-              className="nav-link"
-              href={resume}
-            >
+            <a target="_blank" className="nav-link" href={resume}>
               Resume
             </a>
           </Nav>
