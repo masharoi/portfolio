@@ -1,18 +1,11 @@
 import React from "react";
 import "./nav-bar.scss";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+
+import { HashLink } from 'react-router-hash-link';
 import {Nav, Navbar} from "react-bootstrap";
 import resume from "../../assets/maria-zaytseva-resume.pdf";
-import {Link as RouterLink} from "react-router-dom";
 
+import smoothscroll from 'smoothscroll-polyfill';
 class NavBar extends React.Component {
   handleSetActive = to => {
     console.log(to);
@@ -31,6 +24,8 @@ class NavBar extends React.Component {
   };
 
   componentDidMount() {
+    //added a polyfill for safari smooth scroll
+    smoothscroll.polyfill();
     window.addEventListener("scroll", this.listenScrollEvent);
   }
 
@@ -40,44 +35,12 @@ class NavBar extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="nav-link"
-              href="/#home"
-            >
-              Home
-            </Link>
+            <HashLink  to="/#home" smooth> Home</HashLink>
 
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="nav-link"
-              href="/#about"
-            >
-              About
-            </Link>
+            <HashLink to="/#about" smooth> About</HashLink>
 
-            <Link
-              activeClass="active"
-              to="work"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="nav-link"
-              href="/#work"
-            >
-              Projects
-            </Link>
+            <HashLink  to="/#work" smooth> Project </HashLink>
+
             <a target="_blank" className="nav-link" href={resume}>
               Resume
             </a>
