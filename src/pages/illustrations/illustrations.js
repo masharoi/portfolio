@@ -7,8 +7,32 @@ import encounter from "../../assets/illustrations/encounter.jpg";
 import run from "../../assets/illustrations/run.jpg";
 import cyberBoy from "../../assets/illustrations/cyber-boy.jpg";
 import StackGrid from "react-stack-grid";
+import {useState, useEffect} from "react";
+
+function getWidth() {
+  const {innerWidth: width} = window;
+  return {
+    width
+  };
+}
+
+function useWidth() {
+  const [width, setWidth] = useState(getWidth());
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(getWidth());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+}
 
 function Illustrations() {
+  const {width} = useWidth();
   return (
     <div>
       <NavBar />
@@ -29,9 +53,12 @@ function Illustrations() {
         </p>
       </div>
       <div id="gallery">
-        <StackGrid columnWidth={"25%"} gutterWidth={"30"} gutterheight={"30"}>
+        <StackGrid
+          columnWidth={"25%"}
+          gutterWidth={width <= 800 ? "10" : "30"}
+          gutterheight={width <= 800 ? "10" : "30"}
+        >
           <div key="key1">
-            {" "}
             <img src={newLand} className="image" />
           </div>
           <div key="key2">
@@ -44,6 +71,20 @@ function Illustrations() {
             <img src={cyberBoy} className="image" />
           </div>
         </StackGrid>
+      </div>
+      <div id="column-gallery">
+        <div className="img-container">
+          <img src={newLand} className="image" />
+        </div>
+        <div className="img-container">
+          <img src={encounter} className="image" />
+        </div>
+        <div className="img-container">
+          <img src={run} className="image" />
+        </div>
+        <div className="img-container">
+          <img src={cyberBoy} className="image" />
+        </div>
       </div>
       <Footer />
     </div>

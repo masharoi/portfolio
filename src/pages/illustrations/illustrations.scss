@@ -1,27 +1,59 @@
 @import '../../index.scss';
+
 #gallery-intro {
   text-align: center;
   width: 40%;
-  margin: $spacing-large 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: $spacing-large auto;
 }
+
 #gallery {
   margin-left: auto;
   margin-right: auto;
-  height: 80vh;
+  height: 60vh;
   margin: 0 $spacing-large;
 }
+
+#column-gallery {
+  display: none;
+}
+
 .image {
   width: 100%;
   height: auto;
   border-radius: 5px;
 }
-.link {
-  color:$secondary-color;
-  font-weight: bold;
-  &:hover {
-    color:$secondary-color;
 
+.link {
+  color: $secondary-color;
+  font-weight: bold;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery-intro {
+    width: 80%;
+    margin: $spacing-medium auto;
+  }
+
+  #gallery {
+    margin-left: $spacing-small!important;
+    margin-right: $spacing-small!important;
+    height: 80vh;
+    margin: 0 $spacing-medium;
+  }
+}
+@media (max-width: 500px) {
+  #gallery {
+    display: none;
+  }
+
+  #column-gallery {
+    display: block;
+
+    .img-container {
+      margin: $spacing-small;
+    }
   }
 }
