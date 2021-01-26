@@ -76,23 +76,23 @@ function HomeMonitoring() {
           </div>
 
           <div className="hmp-section">
-            <h1 className="sop-header center">UX design</h1>
+            <h1 className="sop-header">UX design</h1>
             <img src={sitemap} id="hmp-sitemap-img" />
           </div>
           <div className="hmp-section">
-            <h1 className="sop-header center">Colors & Typography</h1>
+            <h1 className="sop-header">Colors & Typography</h1>
             <div id="styleguides-container">
               <img src={colors} id="hmp-colors-img" />
               <img src={type} id="hmp-type-img" />
             </div>
           </div>
           <div className="hmp-section">
-            <h1 className="sop-header center">UI Components</h1>
+            <h1 className="sop-header">UI Components</h1>
             <img src={components} id="hmp-components-img" />
           </div>
           <div className="hmp-section hmp-screens">
             <div className="details">
-              <h1 className="">Log data</h1>
+              <h1 className="sop-header">Log data</h1>
               <p className="paragraph">
                 The users can log their health data, such as weight, fluid
                 intake, oxygen saturation, heart rate, add comments and answer
@@ -102,10 +102,10 @@ function HomeMonitoring() {
             </div>
             <img src={screens} className="hmp-screens-img" />
           </div>
-          <div className="hmp-section hmp-screens">
+          <div className="hmp-section hmp-screens col-reverse-md">
             <img src={screens2} className="hmp-screens-img" />
             <div className="details">
-              <h1 className="">Explore graphs & tables</h1>
+              <h1 className="sop-header">Explore graphs & tables</h1>
               <p className="paragraph">
                 The users can view how their health data changes over time. They
                 can switch between graph and table view, see if they have

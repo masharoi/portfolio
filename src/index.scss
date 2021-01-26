@@ -1,8 +1,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&family=Lato:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-//spacing
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); //spacing
 $spacing-horizontal: 147px;
 $spacing-horizontal-small: 24px;
 $spacing-horizontal-large: 64px;
@@ -24,7 +23,7 @@ $sop-gray: #F7F7F7;
 //hmp2
 $hmp-background: #E2E5EB;
 $hmp-color: #001D51;
-$bch-blue:#003087;
+$bch-blue: #003087;
 
 .sop-header {
   font-size: 24px;
@@ -35,14 +34,11 @@ $bch-blue:#003087;
 $suvorov-gray: #eae9e9;
 $suvorov-yellow: #EAA81B;
 $suvorov-green: #012C0B;
-$suvorov-orange: #C95501;
-//moon
+$suvorov-orange: #C95501; //moon
 $moon-background: linear-gradient(180deg, #383941 0%, #010103 100%);
 $moon-black: #010103;
-$moon-green: #29BCA8;
-//Melody
-$melody-black: #323232;
-//main
+$moon-green: #29BCA8; //Melody
+$melody-black: #323232; //main
 $primary-color: #f4f0f6;
 $secondary-color: #B093BF;
 
@@ -64,4 +60,9 @@ h3 {
 
 .medium {
   font-weight: 500;
+}
+@media (max-width: 1000px) {
+  .col-reverse-md {
+    flex-direction: column-reverse!important;
+  }
 }

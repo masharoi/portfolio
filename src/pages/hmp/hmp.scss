@@ -1,7 +1,6 @@
 @import '../../index.scss';
 
 #hmp-container {
-  font-family: 'Roboto', sans-serif;
   color: $hmp-color;
 
   #hmp-intro-container {
@@ -42,32 +41,34 @@
       display: flex;
       justify-content: space-around;
       margin-top: $spacing-small;
+      #hmp-colors-img {
+        width: 35%;
+      }
+
+      #hmp-type-img {
+        display: block;
+        width: 20%;
+      }
     }
 
     .hmp-screens {
       display: flex;
-      justify-content:space-between;
+      justify-content: space-between;
       align-items: center;
 
       .details {
         width: 25%;
+      }
 
+      .hmp-screens-img {
+        width: 70%;
       }
     }
 
     .hmp-section {
       margin: $spacing-largest $spacing-horizontal;
 
-      #hmp-colors-img {
-        width: 35%;
-        margin-top: $spacing-vertical-small;
-      }
 
-      #hmp-type-img {
-        margin-top: $spacing-vertical-small;
-        display: block;
-        width: 20%;
-      }
     }
 
     #hmp-sitemap-img {
@@ -81,15 +82,76 @@
       margin-left: auto;
       margin-right: auto;
       display: block;
-      margin-top: $spacing-vertical-small;
-    }
-
-    .hmp-screens-img {
-      width: 70%;
+      margin-top: $spacing-small;
     }
   }
 }
+@media (max-width: 1000px) {
+  #hmp-container {
+    #hmp-intro-container {
+      padding-left: 0;
 
-.center {
-  text-align: center;
+      #hmp-intro {
+        background-size: 120vh auto;
+        padding-left: $spacing-medium;
+        background-position: 0 100%;
+      }
+    }
+
+    #hmp-main {
+      #hmp-details-section {
+        flex-direction: column;
+
+        .hmp-details-subsection {
+          width: 100%;
+        }
+      }
+
+      #styleguides-container {
+        justify-content: space-between;
+
+        #hmp-colors-img {
+          width: 50%;
+        }
+
+        #hmp-type-img {
+          width: 35%;
+        }
+      }
+
+      .hmp-screens {
+        flex-direction: column;
+
+        .hmp-screens-img {
+          width: 100%;
+        }
+
+        .details {
+          width: 100%;
+        }
+      }
+
+      .hmp-section {
+        margin: $spacing-medium;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #hmp-container {
+    #hmp-intro-container {
+      #hmp-intro {
+        background-size: 70vh auto;
+        padding-left: $spacing-small;
+        background-position: 40% 100%;
+      }
+    }
+
+    #hmp-main {
+
+      .hmp-section {
+        margin: $spacing-small;
+      }
+    }
+  }
 }

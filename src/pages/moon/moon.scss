@@ -164,21 +164,35 @@ a {
   }
 }
 @media (max-width: 500px) {
-  #type-section {
-    #type-inner {
-      flex-direction: column;
+  #moon-container {
+    #moon-intro {
+      padding: $spacing-small;
+    }
 
-      .type-inner-subsection {
-        width: 100%!important;
+    #moon-about-section {
+      .moon-about-subsection {
+        padding-left: $spacing-small;
       }
     }
-  }
 
-  #color-inner {
-    flex-direction: column;
+    .moon-section {
+      padding: $spacing-small;
 
-    .color-blocks {
-      flex-direction: column;
+      #type-section {
+        #type-inner {
+          .type-inner-subsection {
+            width: 100%!important;
+          }
+        }
+      }
+
+      #color-inner {
+        flex-direction: column;
+
+        .color-blocks {
+          flex-direction: column;
+        }
+      }
     }
   }
 }
