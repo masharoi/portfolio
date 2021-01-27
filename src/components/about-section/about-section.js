@@ -11,7 +11,7 @@ const AboutSection = () => {
       </div>
       <div className="about-col-descrp">
         <div className="descrp-container">
-          <h1 className="main-header">About</h1>
+          <h1 className="secondary-header">About</h1>
           <p>
             I’m a user interface designer with a strong background in front-end
             development. When I am not designing, I draw in Procreate, do yoga

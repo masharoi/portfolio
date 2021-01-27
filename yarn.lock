@@ -9876,6 +9876,11 @@
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
 
+"react-simple-image-slider@^2.0.1":
+  "integrity" "sha512-qul6jPi2k5j//N/g5CnQJcVqrfIFERe5bUC1aFP4vG3lpxUsNU/PdpUfV2twskkcWwedQWEg3gUFpmtoJ9WDgQ=="
+  "resolved" "https://registry.npmjs.org/react-simple-image-slider/-/react-simple-image-slider-2.0.1.tgz"
+  "version" "2.0.1"
+
 "react-sizeme@^2.2.0":
   "integrity" "sha512-tL4sCgfmvapYRZ1FO2VmBmjPVzzqgHA7kI8lSJ6JS6L78jXFNRdOZFpXyK6P1NBZvKPPCZxReNgzZNUajAerZw=="
   "resolved" "https://registry.npmjs.org/react-sizeme/-/react-sizeme-2.6.12.tgz"

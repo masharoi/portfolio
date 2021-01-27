@@ -1,6 +1,6 @@
 @import '../../index.scss';
 
-#archive-container {
+#archive {
   margin: $spacing-large $spacing-horizontal;
 
   #archive-subsection {
@@ -19,7 +19,7 @@
 
       li {
         margin: $spacing-tiny 0;
-        cursor:pointer;
+        cursor: pointer;
       }
 
       .archive-selected {
@@ -38,6 +38,27 @@
           border-radius: 7.5px;
           border: 1.5px solid black;
         }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  #archive {
+
+    #archive-subsection {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #archive {
+    margin: $spacing-medium;
+
+    #archive-subsection {
+      flex-direction: column;
+      .archive-img {
+        width: 100%;
       }
     }
   }

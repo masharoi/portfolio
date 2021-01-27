@@ -35,11 +35,11 @@ class NavBar extends React.Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <HashLink  to="/#home" smooth> Home</HashLink>
+            <HashLink className="nav-link"  to="/#home" smooth> Home</HashLink>
 
-            <HashLink to="/#about" smooth> About</HashLink>
+            <HashLink className="nav-link" to="/#about" smooth> About</HashLink>
 
-            <HashLink  to="/#work" smooth> Project </HashLink>
+            <HashLink className="nav-link"  to="/#work" smooth> Projects </HashLink>
 
             <a target="_blank" className="nav-link" href={resume}>
               Resume

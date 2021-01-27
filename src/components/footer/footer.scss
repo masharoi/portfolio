@@ -2,7 +2,8 @@
 
 .footer-container {
   background-color: black;
-  height: 247px;
+  height: 100%;
+  padding: $spacing-large 0;
   color: white;
   justify-content: center;
   align-items: center;
@@ -10,6 +11,7 @@
 
   .footer-section {
     width: 40%;
+
     .footer-social-links {
       color: white;
       display: flex;
@@ -25,5 +27,12 @@
         }
       }
     }
+  }
+}
+@media (max-width: 500px) {
+  .footer-container {
+    padding: $spacing-medium;
+    align-items: flex-start;
+    flex-direction: column-reverse;
   }
 }
