@@ -1,11 +1,12 @@
 import React from "react";
 import "./nav-bar.scss";
 
-import { HashLink } from 'react-router-hash-link';
+import {HashLink} from "react-router-hash-link";
 import {Nav, Navbar} from "react-bootstrap";
 import resume from "../../assets/maria-zaytseva-resume.pdf";
+import {GiHamburgerMenu} from "react-icons/gi";
 
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from "smoothscroll-polyfill";
 class NavBar extends React.Component {
   handleSetActive = to => {
     console.log(to);
@@ -32,14 +33,25 @@ class NavBar extends React.Component {
   render() {
     return (
       <Navbar className={this.state.bg} expand="md" sticky="top">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <GiHamburgerMenu id="toggle-icon" />
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <HashLink className="nav-link"  to="/#home" smooth> Home</HashLink>
+            <HashLink className="nav-link"  to="/#home" smooth>
+              {" "}
+              Home
+            </HashLink>
 
-            <HashLink className="nav-link" to="/#about" smooth> About</HashLink>
+            <HashLink className="nav-link" to="/#about" smooth>
+              {" "}
+              About
+            </HashLink>
 
-            <HashLink className="nav-link"  to="/#work" smooth> Projects </HashLink>
+            <HashLink className="nav-link" to="/#work" smooth>
+              {" "}
+              Projects{" "}
+            </HashLink>
 
             <a target="_blank" className="nav-link" href={resume}>
               Resume

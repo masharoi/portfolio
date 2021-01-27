@@ -1,48 +1,76 @@
-.intro {
+@import '../../index.scss';
+
+#home {
   height: 100vh;
   background: url("../../assets/New_Land.jpg") no-repeat right;
   background-size: 100vh auto;
   margin-top: -56px;
-}
 
-.intro-details {
-  margin-left: 147px;
+  #home-container {
+    .intro-details {
+      margin-left: $spacing-horizontal;
 
-  .details-name {
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 80px;
-    letter-spacing: 0;
-    text-align: left;
-    padding-top: 240px;
-  }
+      .details-name {
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 600;
+        text-align: left;
+        padding-top: 240px;
+      }
 
-  .details-profession {
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 48px;
-    letter-spacing: 0;
-    text-align: left;
-  }
+      .details-profession {
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        text-align: left;
+      }
 
-  .details-social-links > a {
-    color: black;
-    font-size: 24px;
+      .details-social-links > a {
+        color: black;
+        font-size: 24px;
 
-    &:hover {
-      color: #B093BF;
+        &:hover {
+          color: #B093BF;
+        }
+      }
     }
   }
 }
-
 @media (max-width: 987px) {
-  .intro {
+  #home {
     background: none;
-  }
 
-  .intro-details {
-    margin-left: 5%;
+    #home-container {
+      .intro-details {
+        margin-left: 5%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #home {
+    background: none;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    #home-container {
+      .intro-details {
+        margin-left: $spacing-small;
+
+        .details-name {
+          font-size: 48px;
+          padding-top: 0;
+        }
+
+        .details-profession {
+          font-size: 24px;
+          padding-top: 0;
+        }
+
+        .details-social-links > a {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }

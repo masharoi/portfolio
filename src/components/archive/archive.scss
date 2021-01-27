@@ -8,7 +8,7 @@
     justify-content: space-between;
 
     .archive-img {
-      width: 70%;
+      width: 60%;
       height: auto;
       border-radius: 5px;
     }
@@ -44,19 +44,24 @@
 }
 @media (max-width: 900px) {
   #archive {
+    margin: $spacing-large;
 
     #archive-subsection {
       flex-direction: column;
+
+      .archive-img {
+        width: 90%;
+      }
     }
   }
 }
-
 @media (max-width: 500px) {
   #archive {
     margin: $spacing-medium;
 
     #archive-subsection {
       flex-direction: column;
+
       .archive-img {
         width: 100%;
       }
