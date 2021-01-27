@@ -50,7 +50,7 @@ const works = [
 const WorkSection = () => {
   return (
     <div className="work-container" id="work">
-      <h1 className="work-title">Projects</h1>
+      <h1 className="main-header work-title">Projects</h1>
       <div className="d-flex flex-wrap work-list">
         {works.map(work => {
           return (

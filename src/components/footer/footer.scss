@@ -1,33 +1,29 @@
-.footer-container{
-    background-color: black;
-    height: 247px;
-    color:white;
-    align-items: center;
-    justify-content: center;
+@import '../../index.scss';
 
-  p{
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+.footer-container {
+  background-color: black;
+  height: 247px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
-  }
-
-
-  .footer-social-links{
-    color: white;
-
-    a {
+  .footer-section {
+    width: 40%;
+    .footer-social-links {
       color: white;
-      &:hover{
-        color: #B093BF;
+      display: flex;
+      flex-direction: column;
+
+      .social-link {
+        color: white;
+        width: 80px;
+
+        &:hover {
+          color: $secondary-color;
+          text-decoration: none;
+        }
       }
     }
-
   }
-
-
-
 }

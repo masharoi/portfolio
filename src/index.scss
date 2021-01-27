@@ -3,11 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); //spacing
 $spacing-horizontal: 147px;
-$spacing-horizontal-small: 24px;
-$spacing-horizontal-large: 64px;
-$spacing-vertical-small: 24px;
-$spacing-vertical-medium: 48px;
-$spacing-vertical-large: 64px; //
 $spacing-tiny: 8px;
 $spacing-small: 24px;
 $spacing-medium: 48px;
@@ -28,7 +23,7 @@ $bch-blue: #003087;
 .sop-header {
   font-size: 24px;
   margin-bottom: 8px;
-  margin-top: $spacing-vertical-medium;
+  margin-top: $spacing-medium;
 }
 //suvorov-park
 $suvorov-gray: #eae9e9;
@@ -60,6 +55,14 @@ h3 {
 
 .medium {
   font-weight: 500;
+}
+
+.main-header {
+  font-size: 48px;
+}
+
+.secondary-header {
+  font-size: 24px;
 }
 @media (max-width: 1000px) {
   .col-reverse-md {

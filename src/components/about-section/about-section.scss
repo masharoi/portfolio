@@ -6,6 +6,7 @@
   display: flex;
   height:100vh;
 
+
   .about-col-pic {
     display: flex;
     align-items: center;
@@ -24,23 +25,10 @@
     text-align: left;
     margin-left: 20%;
 
-    .about-descrp {
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 64px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-bottom: 20px;
-    }
 
     .descrp-container > p {
-      font-size: 24px;
-      font-style: normal;
-      line-height: 28px;
-      letter-spacing: 0em;
-      text-align: left;
       width: 30vw;
+      margin-bottom: $spacing-medium;
     }
   }
 }

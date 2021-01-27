@@ -13,7 +13,7 @@ const Archive = () => {
 
   return (
     <div id="archive-container">
-      <h1 className="work-title">Archive</h1>
+      <h1 className="work-title main-header">Archive</h1>
       <div id="archive-subsection">
         <ul>
           <li
