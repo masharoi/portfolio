@@ -70,7 +70,7 @@ function HomeMonitoring() {
                 An app that allows the users to log their data on a regular
                 basis and explore how their parameters, such as weight, fluid
                 intake and others, change over time. Moreover, the patients can
-                upload pictures if needed.
+                upload pictures to demonstrate their physical condition.
               </p>
             </div>
           </div>
@@ -97,7 +97,7 @@ function HomeMonitoring() {
                 The users can log their health data, such as weight, fluid
                 intake, oxygen saturation, heart rate, add comments and answer
                 questions related to their health. They can also edit their logs
-                and upload images if necessary.
+                and upload images.
               </p>
             </div>
             <img src={screens} className="hmp-screens-img" />

@@ -49,7 +49,9 @@ const Archive = () => {
               Contact app
             </li>
           </ul>
+          <div id="archive-img-container">
           <img src={photos[currPhotoIndex]} className="archive-img" />
+          </div>
         </div>
       </div>
     </div>

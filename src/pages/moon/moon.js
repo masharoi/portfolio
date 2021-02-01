@@ -67,12 +67,12 @@ function MoonProject() {
           <div className="moon-about-subsection">
             <h3 className="bold">About</h3>
             <p>
-              In the distant future humanity has already built multiple Moon
-              bases and the colonies are growing rapidly. MOON EXPEDITIONS is a
-              travel company which organizes expeditions to the Moon. The goal
-              of this project is to create an easy way for the users to sign up
-              for the expedition and learn more about the trip and the
-              conditions on the Moon.
+              In a distant future humanity has already built multiple Moon bases
+              and the colony is growing rapidly. MOON EXPEDITIONS is a travel
+              company which organizes expeditions to the Moon. The goal of this
+              project is to create an easy way for the users to sign up for the
+              expedition and learn more about the trip and the conditions on the
+              Moon.
             </p>
             <h3 className="bold">Users</h3>
             <p>
@@ -86,20 +86,22 @@ function MoonProject() {
           <div className="moon-about-subsection">
             <h3 className="bold">The Problem</h3>
             <p>
-              There have always been people that crave unconventional and
-              oftentimes dangerous experiences. Travelling to remote places on
-              our planet is one way to satisfy that need. However, when you have
-              been everywhere, where else can you go?
+              Travelling to the Moon sounds both exciting and scary. Generally,
+              it is hard for people to imagine what challenges and opportunities
+              space travel can bring. That is why there is a need for a platform
+              that would inform the users about the nature of such a trip and
+              hopefully inspire them to have the most exciting experience of
+              their life.
             </p>
             <h3 className="bold"> The Solution</h3>
             <p>
               A responsive website that allows the users to learn more about the
-              expedition to the Moon and apply for this program. The users can
+              expedition to the Moon and apply for the program. The users can
               explore the website and learn about the flight conditions, the
               Moon base, program restrictions and possible activities on the
               Moon. The potential travellers can also submit an application
-              through the website and upon approval they will receive additional
-              information that will help them prepare for the trip.
+              through the website and receive more detailed trip-related
+              information upon approval.
             </p>
           </div>
         </div>
@@ -108,18 +110,12 @@ function MoonProject() {
           <h1 className="sub-title">Research</h1>
           <p>
             This project posed certain challenges because of its futuristic
-            nature. Prior to the design phase I did some{" "}
-            <a
-              target="_blank"
-              href="https://docs.google.com/document/d/1seiTbxquX3V7YRBUL0eFGStaO0UYHKm7--PuOmNZTzg/edit"
-            >
-              research
-            </a>{" "}
-            related to the possibilities of the Moon colonization in order to
-            understand what kind of conditions and challenges are associated
-            with space travel. I also conducted interviews with people that like
-            extreme sports and travelling as those kinds of users would be most
-            likely to sign up for such experience if it existed.
+            nature. Prior to the design phase I did a thorough research related
+            to the possibilities of the Moon colonization in order to understand
+            what kind of conditions and challenges are associated with space
+            travel. I also conducted interviews with people that like extreme
+            sports and travelling as those kinds of users would be most likely
+            to sign up for such an experience.
           </p>
         </div>
         <img src={sketches} id="moon-sketches-img" />
@@ -201,8 +197,8 @@ function MoonProject() {
         <div className="moon-section">
           <h1 className="sub-title">Mobile</h1>
           <p>
-            One of the tasks of this project was to create a fully responsive
-            website.
+            One of the major tasks of this project was to create a fully
+            responsive website.
           </p>
           <img src={mobile} className="moon-screen-img" />
         </div>

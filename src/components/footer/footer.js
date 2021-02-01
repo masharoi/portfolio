@@ -29,6 +29,13 @@ const Footer = () => {
           >
             Dribbble
           </a>
+          <a
+            className="social-link"
+            target="_blank"
+            href="https://github.com/masharoi"
+          >
+            Github
+          </a>
         </div>
       </div>
       <Contact className="footer-section" />

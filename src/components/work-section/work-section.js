@@ -3,7 +3,7 @@ import "./work-section.scss";
 import sop from "../../assets/sop-dribbble.png";
 import hmp from "../../assets/hmp2.jpg";
 import suvorov from "../../assets/suvorov-cover.jpg";
-import elections from "../../assets/info-design/elections.svg";
+import elections from "../../assets/info-cover.png";
 import moon from "../../assets/moon-project/cover.jpg";
 import newLand from "../../assets/illustrations/new-land.jpg";
 import {Link} from "react-router-dom";

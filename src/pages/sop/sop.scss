@@ -30,9 +30,12 @@
   #sop-main {
     #sop-details-section {
       display: flex;
+      height: auto;
+      align-items: center;
 
       #details-text {
         padding-right: $spacing-horizontal;
+        height: 100%;
 
         a {
           color: $bch-blue;
@@ -48,6 +51,7 @@
 
       #sop-details-img {
         width: 35%;
+        height: 100%;
       }
     }
 
@@ -90,7 +94,7 @@
         width: 100%;
         height: auto;
         background: $sop-background;
-        padding: $spacing-large $spacing-large;
+        padding: $spacing-large;
       }
 
       #sop-components-img {

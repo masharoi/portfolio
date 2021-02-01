@@ -40,8 +40,8 @@ function Illustrations() {
         <h1>Digital Illustration</h1>
         <p>
           When I am not designing, I am usually drawing in Procreate. I enjoy
-          creating fantasy/sci-fi scenes and characters. One of the latest works
-          was creating a banner for the{" "}
+          creating fantasy/sci-fi scenes and characters. The latest project that
+          I was working on was creating a banner for {" "}
           <a
             className="link"
             target="_blank"
